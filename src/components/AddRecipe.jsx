@@ -1,9 +1,12 @@
-// import Alert from '../components/Alert';
+import Alert from '../components/Alert';
+import AddIngredient from './AddIngredient';
 import React, { useState } from 'react';
 import '../styles/scss/add-recipe.scss';
+// import PropTypes from 'prop-types';
 
 
-function AddRecipe () {
+const AddRecipe = () => {
+ 
   const initialState = {
     fields: {
       title: "",
@@ -12,8 +15,11 @@ function AddRecipe () {
         qty: 0,
         units: "",
       },],
-      method: [""],
+      method: [
+        "",
+      ],
       nutrition: {
+        calories: 0,
         carbs: 0,
         fat: 0,
         fibre: 0,
@@ -27,31 +33,31 @@ function AddRecipe () {
     },
   };
 
+
   const handleAddRecipe = (event) => {
-    event.preventDefault();
     setAlert({message: "", isSuccess: false});
     console.log(fields);
   }
 
   const [fields, setFields] = useState(initialState.fields);
-  const [ingredient, setIngredient] = useState(initialState.fields.ingredients);
   const [alert, setAlert] = useState(initialState.alert);
+  // const [ingredients, setIngredients] = useState(initialState.fields.ingredients);
+  // const [method, setMethod] = useState(initialState.fields.method);
+  // const [nutrition, setNutrition] = useState(initialState.fields.nutrition);
 
   const handleFieldChange = (event) => {
+    event.preventDefault();
+
     const { name, value } = event.target;
     setFields({...fields, [name]: value});
   }
 
-  const handleAddToList = (event) => {
-    const { name, value } = event.target;
-    setIngredient
-  }
-
   return(
     <div className="add-recipe">
+      <Alert message={alert.message} isSuccess={alert.isSuccess} />
       <h2 className="h2">New Recipe</h2>
       <form onSubmit={handleAddRecipe}>
-        {/* <Alert message={alert.message} success={alert.isSuccess} /> */}
+        <Alert message={alert.message} success={alert.isSuccess} />
         <label className="label" htmlFor={fields.title}>
           Title:
           <input 
@@ -66,46 +72,13 @@ function AddRecipe () {
         </label>
         <label className="label" htmlFor={fields.ingredients}>
           Ingredients:
-          <p/>
-          <input 
-            className="ingredient-ingredient"
-            type="text"
-            name="ingredient"
-            id="ingredient-ingredient" 
-            placeholder="Ingredient"
-            value={fields.ingredients.ingredient}
-            onChange={handleFieldChange}
-            data-testid="add-recipe-ingredient-input"
-          />
-          <input 
-            className="ingredient-qty"
-            type="number"
-            name="qty"
-            id="ingredient-qty" 
-            placeholder="qty"
-            value={fields.ingredients.qty}
-            onChange={handleFieldChange}
-            data-testid="add-recipe-ingredient-input"
-          />
-          <select 
-            className="ingredient-unit"
-            type="selection"
-            name="unit"
-            id="ingredient-unit" 
-            placeholder="unit"
-            value={fields.ingredients.unit}
-            onChange={handleFieldChange}
-            data-testid="add-recipe-ingredient-input"
-          >
-            <option value="item">item</option>
-            <option value="g">g</option>
-            <option value="kg">kg</option>
-          </select>
-          <button className="add-button" type="">+</button>
+          <AddIngredient />
         </label>
+
       </form>
     </div>
   )
 }
+
 
 export default AddRecipe;
