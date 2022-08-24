@@ -1,0 +1,93 @@
+[{
+    "recipeId": 1,
+    "title": "Beans on Toast",
+    "description": "Toast with delicious beans",
+    "imgUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    "ingredients": [
+      {
+        "ingredient": "bread",
+        "qty": "2",
+        "unit": "items"
+      },
+      {
+        "ingredient": "beans",
+        "qty": "100",
+        "unt": "grams"
+      }
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "Put the bread in the toaster"
+      },
+      {
+        "step": 2,
+        "instruction":"Toast the bread"
+      },
+      {
+        "step": 3,
+        "instruction": "Cook the beans"
+      },
+      {
+        "step": 4,
+        "instruction": "Put the beans on the bread"
+      },
+      {
+        "step": 5,
+        "instruction": "Enjoy!"
+      }
+    ],
+    "nutrition": {
+      "calories": "200",
+      "carbs": "35",
+      "fat": "40",
+      "fibre": "20",
+      "protein": "50",
+      "sugar": "15"
+    }
+  },
+  {
+    "recipeId": 2,
+    "title": "Cheese on Toast",
+    "description": "Toast with delicious melted cheese",
+    "imgUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    "ingredients": [
+      {
+        "ingredient": "bread",
+        "qty": "2",
+        "unit": "items"
+      },
+      {
+        "ingredient": "cheese",
+        "qty": "100",
+        "unt": "grams"
+      }
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "Put the bread in the toaster"
+      },
+      {
+        "step": 2,
+        "instruction": "Put the cheese on the bread"
+      },
+      {
+        "step": 3,
+        "instruction":"Toast the bread"
+      },
+      {
+        "step": 4,
+        "instruction": "Enjoy!"
+      }
+    ],
+    "nutrition": {
+      "calories": "200",
+      "carbs": "35",
+      "fat": "40",
+      "fibre": "20",
+      "protein": "50",
+      "sugar": "15"
+    }
+  }]
+
