@@ -5,12 +5,12 @@ import Recipes from './Recipes';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
 
-      <h1>Health App</h1>
-      <Link className="home-nav-button" to="/recipeS">Recipes</Link>
-      <Link className="home-nav-button" to="/add-recipe">Add Recipe</Link>
-      <Link className="home-nav-button" to="/exercise">Exercise</Link>
+      <h1>FüD</h1>
+      <Link className="home-nav-button" to="/recipes">Recipes</Link>
+      {/* <Link className="home-nav-button" to="/add-recipe">Add Recipe</Link> */}
+      {/* <Link className="home-nav-button" to="/exercise">Exercise</Link> */}
       <Switch>
         <Route 
           path="/recipes"
@@ -20,10 +20,6 @@ function App() {
           path="/add-recipe"
           component={AddRecipe}
         /> */}
-        <Route
-          path="/recipes"
-          component={Recipes}
-        />
       </Switch>
     </div>
   );
