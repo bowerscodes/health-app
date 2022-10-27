@@ -2,19 +2,11 @@
     "recipeId": 1,
     "title": "Beans on Toast",
     "description": "Toast with delicious beans",
-    "imgUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "ingredients": [
-      {
-        "ingredient": "bread",
-        "qty": "2",
-        "unit": "items"
-      },
-      {
-        "ingredient": "beans",
-        "qty": "100",
-        "unt": "grams"
-      }
-    ],
+    "imgUrl": "https://www.christinascucina.com/wp-content/uploads/2021/06/fullsizeoutput_f3d8.jpeg",
+    "ingredients": {
+        "1": "bread",
+        "2": "beans"
+    },
     "method": [
       {
         "step": 1,
@@ -50,7 +42,7 @@
     "recipeId": 2,
     "title": "Cheese on Toast",
     "description": "Toast with delicious melted cheese",
-    "imgUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    "imgUrl": "https://hintofhelen.com/wp-content/uploads/2019/01/Actifry-Cheese-on-Toast-Hint-Of-Helen-11-720x720.jpg",
     "ingredients": [
       {
         "ingredient": "bread",

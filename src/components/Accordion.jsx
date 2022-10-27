@@ -17,7 +17,7 @@ const [open, setOpen] = useState(false);
           <div>{title}</div>
           <div>{open ? '-' : '+'}</div>  
         </div>
-        {setOpen && <div className="accordion-content">{content}</div>}
+        {open && <div className="accordion-content">{content}</div>}
       </div>
     </div>
   );
