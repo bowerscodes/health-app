@@ -3,10 +3,18 @@
     "title": "Beans on Toast",
     "description": "Toast with delicious beans",
     "imgUrl": "https://www.christinascucina.com/wp-content/uploads/2021/06/fullsizeoutput_f3d8.jpeg",
-    "ingredients": {
-        "1": "bread",
-        "2": "beans"
-    },
+    "ingredients": [
+      {
+        "ingredient": "bread",
+        "qty": "2",
+        "unit": "slices"
+      },
+      {
+        "ingredient": "beans",
+        "qty": "150",
+        "unit": "grams"
+      }
+  ],
     "method": [
       {
         "step": 1,
@@ -42,17 +50,17 @@
     "recipeId": 2,
     "title": "Cheese on Toast",
     "description": "Toast with delicious melted cheese",
-    "imgUrl": "https://hintofhelen.com/wp-content/uploads/2019/01/Actifry-Cheese-on-Toast-Hint-Of-Helen-11-720x720.jpg",
+    "imgUrl": "https://www.warrennash.co.uk/recipes/cheeseontoast/cheeseontoastrecipe_xl.jpg",
     "ingredients": [
       {
         "ingredient": "bread",
         "qty": "2",
-        "unit": "items"
+        "unit": "slices"
       },
       {
         "ingredient": "cheese",
         "qty": "100",
-        "unt": "grams"
+        "unit": "grams"
       }
     ],
     "method": [

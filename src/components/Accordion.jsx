@@ -9,7 +9,6 @@ const [open, setOpen] = useState(false);
 
   return(
     <div className="accordion">
-      <div className="accordion-item">
         <div
           className="accordion-title"
           onClick={() => setOpen(!open)}
@@ -18,7 +17,6 @@ const [open, setOpen] = useState(false);
           <div>{open ? '-' : '+'}</div>  
         </div>
         {open && <div className="accordion-content">{content}</div>}
-      </div>
     </div>
   );
 };
